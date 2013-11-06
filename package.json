@@ -1,38 +1,37 @@
 {
   "name": "grunt",
-  "description": "A task-based command line build tool for JavaScript projects.",
-  "version": "0.3.6",
+  "description": "The JavaScript Task Runner",
+  "version": "0.4.2-0",
   "author": "\"Cowboy\" Ben Alman (http://benalman.com/)",
-  "homepage": "http://github.com/cowboy/grunt",
+  "homepage": "http://gruntjs.com/",
   "repository": {
     "type": "git",
-    "url": "git://github.com/cowboy/grunt.git"
+    "url": "git://github.com/gruntjs/grunt.git"
   },
   "bugs": {
-    "url" : "http://github.com/cowboy/grunt/issues"
+    "url": "http://github.com/gruntjs/grunt/issues"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "http://github.com/cowboy/grunt/blob/master/LICENSE-MIT"
+      "url": "http://github.com/gruntjs/grunt/blob/master/LICENSE-MIT"
     }
   ],
   "main": "lib/grunt",
-  "bin": "bin/grunt",
   "scripts": {
     "test": "grunt test"
   },
   "engines": {
-    "node": ">= 0.6.0"
+    "node": ">= 0.8.0"
   },
-  "preferGlobal": true,
   "keywords": [
+    "task",
     "async",
     "cli",
     "minify",
     "uglify",
     "build",
-    "underscore",
+    "lodash",
     "unit",
     "test",
     "qunit",
@@ -45,22 +44,31 @@
     "tool"
   ],
   "dependencies": {
-    "async": "~0.1.18",
-    "colors": "~0.6.0",
-    "connect": "~1.8.6",
+    "async": "~0.1.22",
+    "coffee-script": "~1.3.3",
+    "colors": "~0.6.0-1",
     "dateformat": "1.0.2-1.2.3",
-    "glob-whatev": "~0.1.4",
+    "eventemitter2": "~0.4.9",
+    "findup-sync": "~0.1.0",
+    "glob": "~3.1.21",
     "hooker": "~0.2.3",
-    "jshint": "~0.5.9",
-    "nodeunit": "~0.6.4",
+    "iconv-lite": "~0.2.5",
+    "minimatch": "~0.2.6",
     "nopt": "~1.0.10",
-    "prompt": "~0.1.12",
-    "semver": "~1.0.13",
-    "uglify-js": "~1.0.7",
-    "underscore": "~1.2.4",
-    "underscore.string": "~2.0.0",
-    "temporary": "~0.0.2",
-    "gzip-js": "~0.3.1"
+    "rimraf": "~2.0.2",
+    "lodash": "~0.9.0",
+    "underscore.string": "~2.2.0-rc",
+    "which": "~1.0.5",
+    "js-yaml": "~2.0.2",
+    "exit": "~0.1.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "temporary": "~0.0.4",
+    "grunt-contrib-jshint": "~0.6.4",
+    "grunt-contrib-nodeunit": "~0.2.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "difflet": "~0.2.3",
+    "semver": "2.1.0",
+    "shelljs": "~0.2.5"
+  }
 }
